@@ -75,3 +75,13 @@ You have successfully installed and configured Jenkins on AWS EC2 (Linux) and ac
 Ensure port 8080 is open in the security group
 Always keep your .pem file secure
 Use sudo where required
+
+Creating CI/CD Process----->
+
+1. Creat job from jenkins
+2. git clone in configure
+3. create docker image - docker build -t dice-game .
+4. buiold failed because show permision denied
+5. give perminsion to jenkins in dokcer -  sudo usermod -aG dokcer jenkins
+6. newgrp docker
+7. restart jenkins ---- sudo systemctl restart jenkins
